@@ -1,38 +1,34 @@
 package Driver;
 
 import com.tree.nodes.Node;
-import com.tree.search.binary.BST;
+import com.tree.search.binary.BBST;
 
 public class Driver {
 
 	public static void main(String[] args) {
 		
-		BST<Integer> binarySearchTree = new BST<Integer>();
+		BBST<Integer> binarySearchTree = new BBST<Integer>();
 		binarySearchTree.insert(10);
-		binarySearchTree.insert(0);
-		binarySearchTree.insert(1);
-		binarySearchTree.insert(115);
-		binarySearchTree.insert(112);
+		binarySearchTree.insert(20);
+		binarySearchTree.insert(30);
+		binarySearchTree.insert(40);
+		binarySearchTree.insert(50);
+		binarySearchTree.insert(25);
 		binarySearchTree.insert(10);
-		binarySearchTree.insert(10);
-		
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
+		binarySearchTree.display();
+
 		binarySearchTree.delete(10);
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
-		binarySearchTree.delete(0);
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
-		binarySearchTree.delete(115);
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
-		binarySearchTree.delete(112);
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
-		binarySearchTree.delete(1);
-		binarySearchTree.display(binarySearchTree.getRoot());
-		System.out.println();
+		binarySearchTree.display();
+		binarySearchTree.delete(30);
+		binarySearchTree.display();
+		binarySearchTree.delete(50);
+		binarySearchTree.display();
+		binarySearchTree.delete(20);
+		binarySearchTree.display();
+		binarySearchTree.delete(25);
+		binarySearchTree.display();
+		binarySearchTree.delete(40);
+		binarySearchTree.display();
 		System.out.println(IsValidBST(binarySearchTree.getRoot(), Integer.MIN_VALUE, Integer.MAX_VALUE));
 	}
 	
