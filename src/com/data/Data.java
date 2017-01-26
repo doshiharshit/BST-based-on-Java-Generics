@@ -14,6 +14,11 @@ public class Data<T> implements Comparable<T>{
 		return count;
 	}
 	
+	public int decrementCount(){
+		count--;
+		return count;
+	}
+	
     public int getCount() {
 		return count;
 	}
