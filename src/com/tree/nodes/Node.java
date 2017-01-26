@@ -18,6 +18,7 @@ public class Node<T extends Comparable<T>>{
 
 	public Node(T dataIn) {
 		setData(new Data<T>(dataIn));
+		setHeight(1);
 	}
 	
 	public Node<T> getLeft() {
